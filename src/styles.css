@@ -26,6 +26,11 @@
     font-weight: bold;
     font-size: 2rem;
 }
+#main.dia > #inicio div h3,
+#main.dia > #inicio div p{
+    color: #2f3e46;
+}
+
 #main.noche > section h2 {
     color: #cad2c5;
     font-weight: bold;
