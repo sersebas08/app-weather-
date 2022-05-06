@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../src/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Servente_sebastian, Materia: PWA, Turno noche-3A</title>
+</head>
+<body>
+    <header class="flex justify-between">
+        <div class="pl-5">
+            <h1 class="hidden">logos</h1>
+            <picture class="p-2">
+                <source media="(min-width: 751px)" srcset="./../img/logo-contacto.png">
+                <source media="(min-width: 380px)" srcset="./../img/logo-contacto.png">
+                <img src="./../img/logo-contacto.png" class="w-10   rounded-full" alt="Mi imagen responsive">
+            </picture>
+        </div>
+        <div class="headers h-20 "></div>
+    </header>
+    <main id="main">
+        <div class="validar"></div>
+        <section class="buscarCiudad hidden pt-10">
+            <h2 class="text-center pt-10">Buscador del clima</h2>
+                <form class="formSearch max-w-xs m-auto" id="contact-form" action="#" method="get">
+                    <div class="m-4">
+                        <div class="form-group flex">
+                            <label for="search" class="form-label hidden" >buscar  </label>
+                            <input title="Search" id="search" class="search placeholder:italic placeholder:text-slate-400 block bg-white w-full border-none border-slate-300 rounded-l-lg py-2 pl-7 pr-3 shadow-sm focus:outline-none   sm:text-sm"
+                                   value="" type="text" placeholder="Buscar ciudad o pais" />
+                            <button class="sendButton border-none bg-white  py-2 pl-7 pr-3 rounded-r-lg  hover:drop-shadow-md" ><i class="bi bi-search mr-2"></i></button>
+
+                        </div>
+
+                    </div>
+                </form>
+
+            <div class="main pt-12"></div>
+            <div id="map"></div>
+
+        </section >
+        <article class="inicio " id="inicio">
+            <div class="inicio__div">
+                <h3 class="m-3 text-center text-2xl font-bold text-gray-100">Bienvenidos a cliMax</h3>
+                <p class="text-gray-100 m-auto text-center sm:text-2xl  font-bold p-5 max-w-xl">El clima siempre ha sido una parte importante
+                    de nuestras vidas, y no podemos dejar de verificarla.
+                    Desde lluvia, niebla y nieve hasta huracanes, tornados y ciclones, el clima puede ser impredecible.</p>
+                <button class="btnInicio m-auto mt-3 border-none  py-2 pl-3 pr-3 rounded-lg  hover:drop-shadow-md ">Ingresar</button>
+            </div>
+
+        </article>
+    </main>
+    <footer>
+        <section>
+
+            <div></div>
+        </section>
+    </footer>
+
+    <script src="../js/function/app.js" type="module"></script>
+</body>
+</html>
+
+<!--
+https://php.vercel.app/
+https://github.com/juicyfx/vercel-php-->

@@ -1,0 +1,179 @@
+/*Paleta de colores*/
+
+/*https://coolors.co/palette/cad2c5-84a98c-52796f-354f52-2f3e46*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dia {
+    background-image: url("../img/verano.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.noche {
+    background-image: url("../img/noches.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.verano {background-color: red}
+.otoño{background-color: yellow}
+.invierno{background-color: blue}
+.primavera{background-color: green}
+#main.dia > section h2 {
+    color: #2f3e46;
+}
+#main.noche > section h2 {
+    color: #cad2c5;
+    font-weight: bold;
+    font-size: 2rem;
+}
+#main {
+    height: 100vh;
+}
+.headers {
+    display: flex;
+    justify-content: end;
+}
+.btnInicio {
+    background-color: #2f3e46;
+    color: #cad2c5;
+    width: 50%;
+    max-width: 500px;
+}
+.btnInicio:hover {
+    background-color: #cad2c5;
+    color: #2f3e46;
+}
+.ulHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    margin-top: 0.5rem;
+}
+.ulHeader li:nth-child(1){
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.inicios {
+    display: none;
+}
+.iniciosCiudad {
+    display: flex;
+}
+.inicio__div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    padding-top: 8rem;
+
+}
+/*#inicio {*/
+/*    display: block;*/
+/*    align-items: center;*/
+/*    margin: auto;*/
+/*    height: 74vh;*/
+/*}*/
+.imgLi {
+    display: flex;
+    align-items: center;
+    /*background: rgb(238,72,22);*/
+    /*background: linear-gradient(90deg, rgba(238,72,22,1) 0%, rgba(241,241,10,1) 35%, rgba(60,244,13,1) 100%);*/
+  /*  height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+header {
+    background-color: #2f3e46;
+    color: #e5e7eb;
+    display: flex;
+    /*justify-content: end;*/
+}
+.validar {
+    width: 100%;
+   /* position: absolute;*/
+}
+.valid {
+    background: #cad2c5;
+    text-align: center;
+    margin: auto;
+    padding: 0.4rem;
+}
+/*.formSearch div .sendButton {
+    background-color: #52796f;
+    color: #cad2c5;
+}
+.formSearch div .sendButton:hover {
+    background-color: #cad2c5;
+    color: #52796f;
+}*/
+.divUbica {
+    background-color: #cad2c5;
+    width: 90%;
+    margin: auto;
+    padding: .5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+.divUbica__p {
+    font-size: .7rem;
+}
+.divUbica h2 {
+    margin-left: 1rem;
+    font-weight: 600;
+}
+.divUbica .pais{
+    color: #354f52;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+.divUbica .divTemp {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+.divUbica .divTemp div {
+    width: 100%;
+    font-size: .8rem;
+    text-align: center;
+    margin: auto;
+}
+.divUbica .divDesc {
+    width: 30%;
+}
+.divUbica .divState {
+    font-size: .8rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.divUbica .divState p {
+    text-align: center;
+    margin: .5rem;
+}
+.divUbica .divDesc img {
+    width: 100%;
+    margin: auto;
+}
+.divUbica .divTemp .temp {
+    font-size: 5rem;
+}
+
+.divUbica .divTemp .Cel {
+    font-size: 1.5rem;
+    margin-top: -2rem;
+    margin-left: 1rem;
+}
+
