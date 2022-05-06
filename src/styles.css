@@ -23,6 +23,8 @@
 .primavera{background-color: green}
 #main.dia > section h2 {
     color: #2f3e46;
+    font-weight: bold;
+    font-size: 2rem;
 }
 #main.noche > section h2 {
     color: #cad2c5;
