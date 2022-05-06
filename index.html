@@ -28,22 +28,18 @@
         <div class="validar"></div>
         <section class="buscarCiudad hidden pt-10">
             <h2 class="text-center pt-10">Buscador del clima</h2>
-                <form class="formSearch max-w-xs m-auto" id="contact-form" action="#" method="get">
-                    <div class="m-4">
-                        <div class="form-group flex">
-                            <label for="search" class="form-label hidden" >buscar  </label>
-                            <input title="Search" id="search" class="search placeholder:italic placeholder:text-slate-400 block bg-white w-full border-none border-slate-300 rounded-l-lg py-2 pl-7 pr-3 shadow-sm focus:outline-none   sm:text-sm"
-                                   value="" type="text" placeholder="Buscar ciudad o pais" />
-                            <button class="sendButton border-none bg-white  py-2 pl-7 pr-3 rounded-r-lg  hover:drop-shadow-md" ><i class="bi bi-search mr-2"></i></button>
-
-                        </div>
-
+            <form class="formSearch max-w-xs m-auto" id="contact-form" action="#" method="get">
+                <div class="m-4">
+                    <div class="form-group flex">
+                        <label for="search" class="form-label hidden" >buscar  </label>
+                        <input title="Search" id="search" class="search placeholder:italic placeholder:text-slate-400 block bg-white w-full border-none border-slate-300 rounded-l-lg py-2 pl-7 pr-3 shadow-sm focus:outline-none   sm:text-sm"
+                               value="" type="text" placeholder="Buscar ciudad o pais" />
+                        <button class="sendButton border-none bg-white  py-2 pl-7 pr-3 rounded-r-lg  hover:drop-shadow-md" ><i class="bi bi-search mr-2"></i></button>
                     </div>
-                </form>
-
+                </div>
+            </form>
             <div class="main pt-12"></div>
             <div id="map"></div>
-
         </section >
         <article class="inicio " id="inicio">
             <div class="inicio__div">
@@ -53,16 +49,31 @@
                     Desde lluvia, niebla y nieve hasta huracanes, tornados y ciclones, el clima puede ser impredecible.</p>
                 <button class="btnInicio m-auto mt-3 border-none  py-2 pl-3 pr-3 rounded-lg  hover:drop-shadow-md ">Ingresar</button>
             </div>
-
         </article>
     </main>
     <footer>
-        <section>
-
-            <div></div>
+        <section class="footer">
+            <h2 class="flex justify-center md:justify-start">CONTACTO</h2>
+            <div class="footer__div flex justify-center m-auto flex-col md:justify-start md:flex-row">
+                <div class="footer__lista ml-4 m-6">
+                    <ul>
+                        <li class="flex justify-center md:justify-start">Carrera: Programacion Web</li>
+                        <li class="flex justify-center md:justify-start">Docente: Rubino, gonzalo raul</li>
+                        <li class="flex justify-center md:justify-start">Institucion: Escuela Da Vinci</li>
+                        <li class="flex justify-center md:justify-start">Alumno: Servente, sebastian andres</li>
+                    </ul>
+                </div>
+                <div class="footer__lista ml-4 m-6 ">
+                    <ul>
+                        <li class="flex justify-center md:justify-start"><i class="bi bi-facebook mr-2"></i>sersebas08@yahoo.com.ar</li>
+                        <li class="flex justify-center md:justify-start"><i class="bi bi-instagram mr-2"></i>@sebaservente</li>
+                        <li class="flex justify-center md:justify-start"><i class="bi bi-twitch mr-2"></i>sersebas08</li>
+                        <li class="flex justify-center md:justify-start"><i class="bi bi-twitter mr-2"></i>@servente80</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </footer>
-
     <script src="js/function/app.js" type="module"></script>
 </body>
 </html>

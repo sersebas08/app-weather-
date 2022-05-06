@@ -184,3 +184,26 @@ header {
     margin-left: 1rem;
 }
 
+.footer {
+    /*display: flex;
+    flex-wrap: wrap;*/
+    background-color: #354f52;
+}
+.footer h2 {
+    width: 100%;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: #cad2c5;
+    font-weight: bold;
+}
+.footer__div {
+    width: 100%;
+    display: flex;
+}
+.footer__lista ul li {
+    color: #cad2c5;
+    line-height: 31px;
+    font-weight: 500;
+
+}
