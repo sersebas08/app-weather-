@@ -21,6 +21,7 @@ export function leerCiudad(data){
 
     let icon = data.weather[0].icon;
     const urlIcon = `https://openweathermap.org/img/wn/${icon}.png`;
+
     let horaLocal = new Date(data.dt*1000).toLocaleString("sp-SP", {
         timeStyle: "short",
         dateStyle: "long"
@@ -34,8 +35,24 @@ export function leerCiudad(data){
         speed: data.wind.speed,
         pressure: data.main.pressure,
         ciudad: data.name,
-        pais: data.sys.country
+        pais: data.sys.country,
+        nubo: data.weather[0].main
     };
+
+    /*colocar video segun clima
+
+    console.log('esta es la data2 :', data);
+    console.log('esta es la nubo2 :', dataAppi.nubo);
+
+    if (dataAppi.nubo === 'Clear'){
+        console.log('clima despejado: ', dataAppi.nubo);
+        const video = '<iframe width="360" height="115" src="https://www.youtube.com/embed/ykGmIVLaItg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+
+    } else if (dataAppi.nubo === 'Clouds') {
+        console.log('clima nublado: ', dataAppi.nubo);
+    } else if (dataAppi.nubo === 'Rain'){
+        console.log('clima lluvioso: ' , dataAppi.nubo)
+    }*/
 
     APIS.resultDiv.innerHTML = `<div class="divUbica opacity-80 hover:shadow-xl max-w-sm p-3">
                                 <p>${dataAppi.ciudad}</p>
@@ -57,8 +74,8 @@ export function leerCiudad(data){
                                     <p>Presion:  ${dataAppi.pressure} hPa</p>
                                 </div>
                                 <p class="divUbica__p m-auto text-center w-full text-slate-600 pt-2 border-t-2 border-slate-500"><span class="mr-2 ">Ultima actualizacion</span>${horaLocal}</p>
-                                
-                                  <!--<p>${APIS.video}</p>-->
+                                <!--<p>${dataAppi.nubo}</p>-->
+                                  
                             </div>`;
 
 }
